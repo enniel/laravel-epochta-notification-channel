@@ -1,0 +1,45 @@
+{
+    "name": "enniel/laravel-epochta-notification-channel",
+    "type": "library",
+    "description": "Epochta Notification Driver",
+    "keywords": [
+        "epochta",
+        "sms"
+    ],
+    "homepage": "https://github.com/enniel/laravel-epochta-notification-channel",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Evgeni Razumov",
+            "email": "razumov.evgeni@gmail.com"
+        }
+    ],
+    "require": {
+        "php" : ">=5.5.9",
+        "enniel/epochta": "~0.0.1",
+        "illuminate/notifications": "~5.1",
+        "illuminate/support": "~5.1",
+        "psr/http-message": "~1.0.1"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "~1.12.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "NotificationChannels\\Epochta\\": "src"
+        }
+    },
+    "scripts": {
+        "test": [
+            "@phpcs"
+        ],
+        "phpcs": "php vendor/bin/php-cs-fixer --diff --dry-run -v fix"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
