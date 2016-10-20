@@ -18,6 +18,7 @@ class EpochtaMessage
     {
         $this->text($text);
     }
+
     /**
      * @param string $content
      *
@@ -27,6 +28,7 @@ class EpochtaMessage
     {
         return new static($text);
     }
+
     /**
      * The text of the message.
      *
